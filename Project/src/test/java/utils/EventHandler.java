@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collection;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,11 +13,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.events.WebDriverListener;
-//import org.slf4j.Logger;
+import org.slf4j.Logger;
 
 public class EventHandler implements WebDriverListener {
-	private Logger log = LoggerHandler.getLogger();
-    
+	public Logger log = LoggerHandler.log;
     public void logger(String logtxt) {
         if(logtxt != null) {
             try {
