@@ -107,11 +107,8 @@ try{
 ExtentTest test = reporter.createTest("Vote Page", "Execution for Vote ");
 
 log.info("Test Started");
-
 driver.get("https://demowebshop.tricentis.com/");
-
 driver.findElement(By.id("pollanswers-2")).click();
-
 driver.findElement(By.id("vote-poll-1")).click();
 
 Thread.sleep(500);
